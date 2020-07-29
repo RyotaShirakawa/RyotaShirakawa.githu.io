@@ -35,11 +35,32 @@ header{
   margin: 0;
 }
 
-.info ul{
-  margin: 0px;
+header ul{
   padding: 0px;
   list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
   display: flex;
+  width: 400px;
+}
+
+header > ul > a{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  background-color: oldlace;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  color: #6091d3;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+  text-decoration: none;
+}
+
+header > ul > a:link,header > ul > a:visited,header > ul > a:hover,header > ul > a:active {
+  color: #6091d3;
 }
 
 .contents {
