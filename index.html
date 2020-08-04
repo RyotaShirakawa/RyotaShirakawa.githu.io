@@ -20,17 +20,20 @@
           <p>出身：大分県</p>
         </div>
       </div>
-      <ul>
-        <a href="#link_intro"><li>自己紹介</li></a>
-        <a href="#link_career"><li>略歴</li></a>
-        <a href="#link_music"><li>音楽</li></a>
-      </ul>
     </header>
 
 <section class="contents">
-    <section class="intro">
-      <a name="link_intro"><h1>自己紹介</h1></a>
-      <section>
+    <input id="tab1" type="radio" name="tab_btn" checked>
+    <input id="tab2" type="radio" name="tab_btn">
+    <input id="tab3" type="radio" name="tab_btn">
+    
+    <div class="tab_area">
+      <label class="tab1_label" for="tab1">自己紹介</label>
+      <label class="tab2_label" for="tab2">略歴</label>
+      <label class="tab3_label" for="tab3">音楽</label>
+    </div>
+    <div class="contents_area">
+      <div id="contents1" class="tab_contents">
         <p>
           白川凌太です。高専から理学部に編入学した変わり者です。
           高専では情報工学科に所属し、コンピュータについて多少詳しくなりました。
@@ -39,42 +42,38 @@
           ジャニーズが好きでたまにコンサートに行ってます。
           最近は、機械学習に興味がありますが、数年間TeXのマークアップ以外でコーディングをやっていなかったので再勉強しています。
         </p>
-      </section>
-    </section>
-    <section class="career">
-      <a name="link_career"><h1>略歴</h1></a>
-      <section>
+      </div>
+      <div id="contents2" class="tab_contents">
         <p>2013.3　大分市立城東中学校　卒業</p>
         <p>2018.3　大分工業高等専門学校　情報工学科　卒業 </p>
         <p>2021.3　岡山大学　理学部　物理学科　卒業予定</p>
-      </section>
-    </section>
-    <section class="music">
-      <a name="link_music"><h1>音楽</h1></a>
-      <p>特に書くことがなかったので、最近聞いている音楽を載せます。普段Apple Musicを使って音楽を聴いています。ジャニーズが嵐しかないので憤りを感じています。</p>
-      <ul>
-        <li>
-         <p> Da-iCEは花村想太くんの歌声が好きで聞いています。</p>
-          <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E3%82%8F%E3%82%8B%E3%81%90%E3%81%A1/1440901731?i=1440901929"></iframe>
-        </li>
-        <li>
-          <p>花村想太くんが率いるNatural Lagというバンドです。全部花村想太くんが歌っているので最高です。</p>
-          <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E8%9C%83%E6%B0%97%E6%A5%BC/1493904549?i=1493904555"></iframe>
-        </li>
-        <li>
-          <p>みんな知ってるヒゲダン。ドラマを全く見ていないのに曲は覚えました。</p>
-          <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/pretender/1459216693?i=1459216694"></iframe>
-        </li>
-        <li>
-          <p>嵐はジャニーズの中で特に好きというわけではないですが、懐かしい曲が多いです。</p>
-          <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/love-so-sweet/1485857244?i=1485857408"></iframe>
-        </li>
-        <li>
-          <p>神宿というアイドルの曲です。小山ひなさんがかわいいです。</p>
-          <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/conversation-fancy/1447869371?i=1447869372"></iframe>
-        </li>
-      </ul>
-    </section>
+      </div>
+      <div id="contents3" class="tab_contents">
+        <p>特に書くことがなかったので、最近聞いている音楽を紹介します。普段Apple Musicを使って音楽を聴いています。ジャニーズが嵐しかないので憤りを感じています。</p>
+        <ul>
+          <li>
+           <p> Da-iCEは花村想太くんの歌声が好きで聞いています。</p>
+            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E3%82%8F%E3%82%8B%E3%81%90%E3%81%A1/1440901731?i=1440901929"></iframe>
+          </li>
+          <li>
+            <p>花村想太くんが率いるNatural Lagというバンドです。全部花村想太くんが歌っているので最高です。</p>
+            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/%E8%9C%83%E6%B0%97%E6%A5%BC/1493904549?i=1493904555"></iframe>
+          </li>
+          <li>
+            <p>みんな知ってるヒゲダン。ドラマを全く見ていないのに曲は覚えました。</p>
+            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/pretender/1459216693?i=1459216694"></iframe>
+          </li>
+          <li>
+            <p>嵐はジャニーズの中で特に好きというわけではないですが、懐かしい曲が多いです。</p>
+            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/love-so-sweet/1485857244?i=1485857408"></iframe>
+          </li>
+          <li>
+            <p>神宿というアイドルの曲です。小山ひなさんがかわいいです。</p>
+            <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/jp/album/conversation-fancy/1447869371?i=1447869372"></iframe>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
     <footer>
       <p>(c) 2020 ShirakawaRyota</p>
