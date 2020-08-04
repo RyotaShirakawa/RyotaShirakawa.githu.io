@@ -35,72 +35,11 @@ header{
   margin: 0;
 }
 
-header ul{
-  padding: 0px;
-  list-style-type: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px;
-  display: flex;
-  width: 400px;
-}
-
-header > ul > a{
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 15px;
-  background-color: oldlace;
-  padding: 0.5em 1em;
-  font-weight: bold;
-  color: #6091d3;/*文字色*/
-  background: #FFF;
-  border: solid 3px #6091d3;/*線*/
-  border-radius: 10px;/*角の丸み*/
-  text-decoration: none;
-}
-
-header > ul > a:link,header > ul > a:visited,header > ul > a:hover,header > ul > a:active {
-  color: #6091d3;
-}
-
 .contents {
   width: 400px;
   margin-right: auto;
   margin-left: auto;
 }
-
-.contents > h1 {
-  font-weight: normal;
-  font-size: 24px;
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.intro {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.career {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.music {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.music > ul > li{
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.music > ul > li > p {
-  font-size: small;
-}
-
 
 .contents p {
   line-height: 1.8;
@@ -112,3 +51,77 @@ footer p {
   margin-bottom: 60px;
   color: gray;
 }
+
+#contents3 > ul > li > p{
+  font-size: small;
+}
+
+#contents3 > ul > li{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+input[type="radio"]{display: none;}
+
+.tab_area{
+  font-size: 0;
+  background-color: #efefef;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.tab_area label{
+  width: 110px;
+  display: inline-block;
+  padding: 12px 0;
+  color: #999;
+  background: #ddd;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+  transition: ease 0.2s opacity;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab_area label:hover{
+  opacity: 0.5;
+}
+
+.contents_area{
+  background: #fff;
+}
+
+.tab_contents{
+  width: 100%;
+  padding: 80px 0;
+  display: none;
+}
+
+#tab1:checked ~ .tab_area .tab1_label{
+  background: #fff;
+  color: #000;
+}
+#tab1:checked ~ .contents_area #contents1{
+  display: block;
+}
+
+#tab2:checked ~ .tab_area .tab2_label{
+  background: #fff;
+  color: #000;
+}
+#tab2:checked ~ .contents_area #contents2{
+  display: block;
+}
+
+#tab3:checked ~ .tab_area .tab3_label{
+  background: #fff;
+  color: #000;
+}
+#tab3:checked ~ .contents_area #contents3{
+  display: block;
+}
+
